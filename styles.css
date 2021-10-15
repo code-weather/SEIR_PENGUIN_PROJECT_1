@@ -1,0 +1,110 @@
+/* *************
+** HEADING
+************* */
+
+h1 {
+    color: #c5d2f8;
+    background-color: rgb(116, 2, 2);
+    display: flex;
+    justify-content: center;
+}
+
+/* *****************
+** Background Image
+****************** */
+
+body {
+    background-color: rgb(139, 32, 32);
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Feskipaper.com%2Fimages%2Fhistory-wallpaper-9.jpg&f=1&nofb=1");
+    background-repeat: no-repeat;
+}
+
+/* *************
+** Question
+**************** */
+
+#question {
+    width: 70%;
+    padding: 30px;
+    border: 3px solid rgb(143, 143, 218);
+    background-color: rgb(172, 68, 68);
+    color: white;
+    font-size: 28px;
+    margin: 10px auto;
+    opacity: 0.9;
+}
+
+/* *************
+** Answers
+**************** */
+
+#answer {
+    width: 50%;
+    margin: 10px auto;
+    color: rgb(207, 203, 203);
+    background-color: rgb(117, 93, 93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#answer ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#answer ul button {
+    width: 40%;
+    height: 40px;
+    background-color: rgb(216, 50, 0);
+    padding-top: 15px;
+    text-align: center;
+    margin: 5px;
+    font-weight: bolder;
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* *************
+** ScoreBoard
+**************** */
+
+#scores {
+    display: flex;
+    width: 70%;
+    background-color: rgb(194, 124, 32);
+    justify-content: center;
+    margin: 10px auto;
+}
+
+#player1, #player2 {
+    width: 40%;
+    background-color: rgb(184, 11, 11);
+    margin: 5px;
+    text-align: center;
+    color: cornsilk;
+}
+
+/* ********************
+** Mobile-first design
+********************** */
+
+@media (min-width: 768px) {
+    div {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #player1, #player2 {
+        display: flex;
+        justify-content: space-around;
+    }
+}
